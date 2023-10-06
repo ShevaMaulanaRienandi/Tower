@@ -36,27 +36,13 @@ public class AudioPlayer : MonoBehaviour
 
     [SerializeField] private List<AudioClip> _audioClips;
 
- 
-
     public void PlaySFX (string name)
-
     {
-
         AudioClip sfx = _audioClips.Find (s => s.name == name);
-
         if (sfx == null)
-
         {
-
             return;
-
         }
-
- 
-
         _audioSource.PlayOneShot (sfx);
-
     }
-
-
 }
